@@ -1,0 +1,52 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+#cont{
+	width:60%;
+	height: 50vh;
+	margin:0 auto;
+	text-align: center;
+	background-color: #ff6699;
+	margin-top : 25vh;
+}
+
+header h1{
+	width:100%;
+	padding-top: 12vh;
+	border-bottom: dashed 1px #fff;
+	color: #fff;
+}
+
+header p {
+	padding-top: 10px;
+}
+
+section p{
+	padding-top: 10px;
+	color:white;
+}
+
+section input{
+	background-color: #000;
+	color:white;
+	width: 10%;
+	border: none;
+	padding: 8px;
+}
+
+section button{
+	background-color: transparent;
+	border: none;
+	padding: 8px;
+	cursor: pointer;
+}
+
+section button:hover{
+	background-color: skyblue;
+	border: none;
+	padding: 8px;
+	cursor: pointer;
+	color:white;
+}
