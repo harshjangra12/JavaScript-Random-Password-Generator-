@@ -11,23 +11,26 @@ function getvalue(){
 }
 
 function randomNumber(upper){
-	return Math.floor(Math.random()*upper) + 1 ;
+	return Math.floor(Math.random()*upper) + 1;
 }
 
-
+var nums = [];
 
 button.addEventListener('click' , function() {
 	if(!getvalue() || getvalue() == 0){
 	results.innerHTML="<p>Your Have not entered any Value or Length<p>";
     }
 	else{
-        var counter = 0;
+    var counter = 0;
 	while(counter<getvalue()){
-		num = randomNumber(getvalue());
-		numb = numb + num.toString();
-                counter += 1;		
+		var num = randomNumber(getvalue());
+		nums[counter] = num;
+        counter += 1;		
 	}
+	numb = nums.join('');
 	results.innerHTML="<p>Your Password is :<p>" + numb;
 	numb = "";
+	nums = [];
 	}
 });
+
