@@ -17,12 +17,17 @@ function randomNumber(upper){
 
 
 button.addEventListener('click' , function() {
-    var counter = 0;
+	if(!getvalue() || getvalue() == 0){
+	results.innerHTML="<p>Your Have not entered any Value or Length<p>";
+    }
+	else{
+        var counter = 0;
 	while(counter<getvalue()){
 		num = randomNumber(getvalue());
 		numb = numb + num.toString();
-        counter += 1;		
+                counter += 1;		
 	}
 	results.innerHTML="<p>Your Password is :<p>" + numb;
 	numb = "";
+	}
 });
